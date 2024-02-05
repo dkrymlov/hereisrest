@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct hereisrestApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootConfigurator()
+                .environmentObject(appState)
         }
     }
 }

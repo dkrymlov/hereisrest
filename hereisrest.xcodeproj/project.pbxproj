@@ -8,17 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		4C44AC172B6FB4C4005AC706 /* hereisrestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC162B6FB4C4005AC706 /* hereisrestApp.swift */; };
-		4C44AC192B6FB4C4005AC706 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC182B6FB4C4005AC706 /* ContentView.swift */; };
+		4C44AC192B6FB4C4005AC706 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC182B6FB4C4005AC706 /* RootView.swift */; };
 		4C44AC1B2B6FB4C6005AC706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C44AC1A2B6FB4C6005AC706 /* Assets.xcassets */; };
 		4C44AC1E2B6FB4C6005AC706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C44AC1D2B6FB4C6005AC706 /* Preview Assets.xcassets */; };
+		4C44AC2C2B6FB58E005AC706 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC2B2B6FB58E005AC706 /* AppState.swift */; };
+		4C44AC312B6FB5F5005AC706 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC302B6FB5F5005AC706 /* AppCoordinator.swift */; };
+		4C44AC332B6FB63A005AC706 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC322B6FB63A005AC706 /* TabBarItem.swift */; };
+		4C44AC372B6FB6E4005AC706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC362B6FB6E4005AC706 /* AppDelegate.swift */; };
+		4C44AC392B6FB738005AC706 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC382B6FB738005AC706 /* RootViewModel.swift */; };
+		4C44AC3B2B6FB742005AC706 /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC3A2B6FB742005AC706 /* RootConfigurator.swift */; };
+		4C44AC422B6FB7D5005AC706 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC412B6FB7D5005AC706 /* ViewModelType.swift */; };
+		4C44AC442B6FB7DC005AC706 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC432B6FB7DC005AC706 /* ViewType.swift */; };
+		4C44AC462B6FB846005AC706 /* ViewModelType+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC452B6FB846005AC706 /* ViewModelType+extensions.swift */; };
+		4C44AC482B6FB9C8005AC706 /* InitialFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC472B6FB9C7005AC706 /* InitialFlow.swift */; };
+		4C44AC4A2B6FBA5D005AC706 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC492B6FBA5C005AC706 /* MainTabBarView.swift */; };
+		4C44AC4C2B6FBA66005AC706 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC4B2B6FBA66005AC706 /* MainTabBarViewModel.swift */; };
+		4C44AC4E2B6FBA70005AC706 /* MainTabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC4D2B6FBA70005AC706 /* MainTabBarConfigurator.swift */; };
+		4C44AC562B6FBBAC005AC706 /* PlanTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC552B6FBBAC005AC706 /* PlanTabView.swift */; };
+		4C44AC582B6FBBB5005AC706 /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC572B6FBBB5005AC706 /* AccountTabView.swift */; };
+		4C44AC5B2B6FBBC3005AC706 /* PlacesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC5A2B6FBBC3005AC706 /* PlacesTabView.swift */; };
+		4C44AC5D2B6FBBCB005AC706 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC5C2B6FBBCB005AC706 /* HomeTabView.swift */; };
+		4C44AC5F2B6FBBDC005AC706 /* PlanTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC5E2B6FBBDC005AC706 /* PlanTabViewModel.swift */; };
+		4C44AC612B6FBBE8005AC706 /* AccountTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC602B6FBBE7005AC706 /* AccountTabViewModel.swift */; };
+		4C44AC632B6FBBF1005AC706 /* PlacesTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC622B6FBBF1005AC706 /* PlacesTabViewModel.swift */; };
+		4C44AC652B6FBBFD005AC706 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC642B6FBBFD005AC706 /* HomeTabViewModel.swift */; };
+		4C44AC672B6FBCAE005AC706 /* PlanTabConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC662B6FBCAE005AC706 /* PlanTabConfigurator.swift */; };
+		4C44AC692B6FBD81005AC706 /* AccountTabConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC682B6FBD81005AC706 /* AccountTabConfigurator.swift */; };
+		4C44AC6B2B6FBDB2005AC706 /* PlacesTabConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC6A2B6FBDB2005AC706 /* PlacesTabConfigurator.swift */; };
+		4C44AC6D2B6FBDDE005AC706 /* HomeTabConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44AC6C2B6FBDDE005AC706 /* HomeTabConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C44AC132B6FB4C4005AC706 /* hereisrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hereisrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C44AC162B6FB4C4005AC706 /* hereisrestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hereisrestApp.swift; sourceTree = "<group>"; };
-		4C44AC182B6FB4C4005AC706 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C44AC182B6FB4C4005AC706 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		4C44AC1A2B6FB4C6005AC706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C44AC1D2B6FB4C6005AC706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C44AC2B2B6FB58E005AC706 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4C44AC302B6FB5F5005AC706 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4C44AC322B6FB63A005AC706 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		4C44AC362B6FB6E4005AC706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C44AC382B6FB738005AC706 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		4C44AC3A2B6FB742005AC706 /* RootConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootConfigurator.swift; sourceTree = "<group>"; };
+		4C44AC412B6FB7D5005AC706 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		4C44AC432B6FB7DC005AC706 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		4C44AC452B6FB846005AC706 /* ViewModelType+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelType+extensions.swift"; sourceTree = "<group>"; };
+		4C44AC472B6FB9C7005AC706 /* InitialFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialFlow.swift; sourceTree = "<group>"; };
+		4C44AC492B6FBA5C005AC706 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		4C44AC4B2B6FBA66005AC706 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
+		4C44AC4D2B6FBA70005AC706 /* MainTabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarConfigurator.swift; sourceTree = "<group>"; };
+		4C44AC552B6FBBAC005AC706 /* PlanTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTabView.swift; sourceTree = "<group>"; };
+		4C44AC572B6FBBB5005AC706 /* AccountTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabView.swift; sourceTree = "<group>"; };
+		4C44AC5A2B6FBBC3005AC706 /* PlacesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabView.swift; sourceTree = "<group>"; };
+		4C44AC5C2B6FBBCB005AC706 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		4C44AC5E2B6FBBDC005AC706 /* PlanTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTabViewModel.swift; sourceTree = "<group>"; };
+		4C44AC602B6FBBE7005AC706 /* AccountTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabViewModel.swift; sourceTree = "<group>"; };
+		4C44AC622B6FBBF1005AC706 /* PlacesTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabViewModel.swift; sourceTree = "<group>"; };
+		4C44AC642B6FBBFD005AC706 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		4C44AC662B6FBCAE005AC706 /* PlanTabConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTabConfigurator.swift; sourceTree = "<group>"; };
+		4C44AC682B6FBD81005AC706 /* AccountTabConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabConfigurator.swift; sourceTree = "<group>"; };
+		4C44AC6A2B6FBDB2005AC706 /* PlacesTabConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabConfigurator.swift; sourceTree = "<group>"; };
+		4C44AC6C2B6FBDDE005AC706 /* HomeTabConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +101,15 @@
 		4C44AC152B6FB4C4005AC706 /* hereisrest */ = {
 			isa = PBXGroup;
 			children = (
+				4C44AC282B6FB533005AC706 /* Common */,
+				4C44AC272B6FB52B005AC706 /* Extensions */,
+				4C44AC2A2B6FB55A005AC706 /* State */,
+				4C44AC242B6FB4FC005AC706 /* Models */,
+				4C44AC252B6FB503005AC706 /* Services */,
+				4C44AC292B6FB539005AC706 /* Scenes */,
+				4C44AC262B6FB517005AC706 /* Resources */,
 				4C44AC162B6FB4C4005AC706 /* hereisrestApp.swift */,
-				4C44AC182B6FB4C4005AC706 /* ContentView.swift */,
-				4C44AC1A2B6FB4C6005AC706 /* Assets.xcassets */,
+				4C44AC362B6FB6E4005AC706 /* AppDelegate.swift */,
 				4C44AC1C2B6FB4C6005AC706 /* Preview Content */,
 			);
 			path = hereisrest;
@@ -65,6 +121,201 @@
 				4C44AC1D2B6FB4C6005AC706 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C44AC242B6FB4FC005AC706 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC402B6FB77F005AC706 /* Enums */,
+				4C44AC3F2B6FB778005AC706 /* Entities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C44AC252B6FB503005AC706 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC2D2B6FB5C6005AC706 /* Coordinator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C44AC262B6FB517005AC706 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC1A2B6FB4C6005AC706 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C44AC272B6FB52B005AC706 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC452B6FB846005AC706 /* ViewModelType+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C44AC282B6FB533005AC706 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC3E2B6FB769005AC706 /* Protocols */,
+				4C44AC3D2B6FB764005AC706 /* VIews */,
+				4C44AC3C2B6FB75A005AC706 /* Modifiers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C44AC292B6FB539005AC706 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC352B6FB6B7005AC706 /* MainTabBar */,
+				4C44AC342B6FB6AF005AC706 /* Root */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4C44AC2A2B6FB55A005AC706 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC2B2B6FB58E005AC706 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		4C44AC2D2B6FB5C6005AC706 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC2F2B6FB5E5005AC706 /* RouteObjects */,
+				4C44AC2E2B6FB5DE005AC706 /* Routes */,
+				4C44AC302B6FB5F5005AC706 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4C44AC2E2B6FB5DE005AC706 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		4C44AC2F2B6FB5E5005AC706 /* RouteObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RouteObjects;
+			sourceTree = "<group>";
+		};
+		4C44AC342B6FB6AF005AC706 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC182B6FB4C4005AC706 /* RootView.swift */,
+				4C44AC382B6FB738005AC706 /* RootViewModel.swift */,
+				4C44AC3A2B6FB742005AC706 /* RootConfigurator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4C44AC352B6FB6B7005AC706 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC502B6FBB64005AC706 /* Tabs */,
+				4C44AC492B6FBA5C005AC706 /* MainTabBarView.swift */,
+				4C44AC4B2B6FBA66005AC706 /* MainTabBarViewModel.swift */,
+				4C44AC4D2B6FBA70005AC706 /* MainTabBarConfigurator.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		4C44AC3C2B6FB75A005AC706 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4C44AC3D2B6FB764005AC706 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		4C44AC3E2B6FB769005AC706 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC412B6FB7D5005AC706 /* ViewModelType.swift */,
+				4C44AC432B6FB7DC005AC706 /* ViewType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4C44AC3F2B6FB778005AC706 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4C44AC402B6FB77F005AC706 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC322B6FB63A005AC706 /* TabBarItem.swift */,
+				4C44AC472B6FB9C7005AC706 /* InitialFlow.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4C44AC502B6FBB64005AC706 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC542B6FBB94005AC706 /* Plan */,
+				4C44AC532B6FBB7E005AC706 /* Account */,
+				4C44AC522B6FBB75005AC706 /* Places */,
+				4C44AC512B6FBB6A005AC706 /* Home */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		4C44AC512B6FBB6A005AC706 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC5C2B6FBBCB005AC706 /* HomeTabView.swift */,
+				4C44AC642B6FBBFD005AC706 /* HomeTabViewModel.swift */,
+				4C44AC6C2B6FBDDE005AC706 /* HomeTabConfigurator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C44AC522B6FBB75005AC706 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC5A2B6FBBC3005AC706 /* PlacesTabView.swift */,
+				4C44AC622B6FBBF1005AC706 /* PlacesTabViewModel.swift */,
+				4C44AC6A2B6FBDB2005AC706 /* PlacesTabConfigurator.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		4C44AC532B6FBB7E005AC706 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC572B6FBBB5005AC706 /* AccountTabView.swift */,
+				4C44AC602B6FBBE7005AC706 /* AccountTabViewModel.swift */,
+				4C44AC682B6FBD81005AC706 /* AccountTabConfigurator.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		4C44AC542B6FBB94005AC706 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				4C44AC552B6FBBAC005AC706 /* PlanTabView.swift */,
+				4C44AC5E2B6FBBDC005AC706 /* PlanTabViewModel.swift */,
+				4C44AC662B6FBCAE005AC706 /* PlanTabConfigurator.swift */,
+			);
+			path = Plan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +388,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C44AC192B6FB4C4005AC706 /* ContentView.swift in Sources */,
+				4C44AC3B2B6FB742005AC706 /* RootConfigurator.swift in Sources */,
+				4C44AC672B6FBCAE005AC706 /* PlanTabConfigurator.swift in Sources */,
+				4C44AC462B6FB846005AC706 /* ViewModelType+extensions.swift in Sources */,
+				4C44AC372B6FB6E4005AC706 /* AppDelegate.swift in Sources */,
+				4C44AC392B6FB738005AC706 /* RootViewModel.swift in Sources */,
+				4C44AC442B6FB7DC005AC706 /* ViewType.swift in Sources */,
+				4C44AC6B2B6FBDB2005AC706 /* PlacesTabConfigurator.swift in Sources */,
+				4C44AC692B6FBD81005AC706 /* AccountTabConfigurator.swift in Sources */,
+				4C44AC5D2B6FBBCB005AC706 /* HomeTabView.swift in Sources */,
+				4C44AC4C2B6FBA66005AC706 /* MainTabBarViewModel.swift in Sources */,
+				4C44AC312B6FB5F5005AC706 /* AppCoordinator.swift in Sources */,
+				4C44AC4E2B6FBA70005AC706 /* MainTabBarConfigurator.swift in Sources */,
+				4C44AC482B6FB9C8005AC706 /* InitialFlow.swift in Sources */,
+				4C44AC632B6FBBF1005AC706 /* PlacesTabViewModel.swift in Sources */,
+				4C44AC562B6FBBAC005AC706 /* PlanTabView.swift in Sources */,
+				4C44AC582B6FBBB5005AC706 /* AccountTabView.swift in Sources */,
+				4C44AC2C2B6FB58E005AC706 /* AppState.swift in Sources */,
+				4C44AC612B6FBBE8005AC706 /* AccountTabViewModel.swift in Sources */,
+				4C44AC652B6FBBFD005AC706 /* HomeTabViewModel.swift in Sources */,
+				4C44AC6D2B6FBDDE005AC706 /* HomeTabConfigurator.swift in Sources */,
+				4C44AC332B6FB63A005AC706 /* TabBarItem.swift in Sources */,
+				4C44AC192B6FB4C4005AC706 /* RootView.swift in Sources */,
+				4C44AC4A2B6FBA5D005AC706 /* MainTabBarView.swift in Sources */,
 				4C44AC172B6FB4C4005AC706 /* hereisrestApp.swift in Sources */,
+				4C44AC5B2B6FBBC3005AC706 /* PlacesTabView.swift in Sources */,
+				4C44AC422B6FB7D5005AC706 /* ViewModelType.swift in Sources */,
+				4C44AC5F2B6FBBDC005AC706 /* PlanTabViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
